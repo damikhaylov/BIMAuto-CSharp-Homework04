@@ -28,15 +28,20 @@ namespace Task2
             {
                 Console.Write("Введите целое число (0 - для завершения): ");
                 N = Convert.ToInt32(Console.ReadLine());
-                if (N > 0) countNPos++;
-                if (N < 0) countNNeg++;
-
+                if (N > 0)
+                    countNPos++;
+                if (N < 0)
+                    countNNeg++;
             } while (N != 0);
 
-            if (countNPos == 0 && countNNeg == 0) Console.WriteLine("Не введено ни одного значимого числа");
-            else if (countNPos > countNNeg) Console.WriteLine("Введено больше положительных чисел, чем отрицательных");
-            else if (countNPos < countNNeg) Console.WriteLine("Введено больше отрицательных чисел, чем положительных");
-            else Console.WriteLine("Введено равное количество положительных и отрицательных чисел");
+            if (countNPos == 0 && countNNeg == 0)
+                Console.WriteLine("Не введено ни одного значимого числа");
+            else if (countNPos > countNNeg)
+                Console.WriteLine("Введено больше положительных чисел, чем отрицательных");
+            else if (countNPos < countNNeg)
+                Console.WriteLine("Введено больше отрицательных чисел, чем положительных");
+            else
+                Console.WriteLine("Введено равное количество положительных и отрицательных чисел");
 
             Console.ReadKey();
         }
